@@ -1,0 +1,19 @@
+{% from "_formhelpers.html" import render_field, render_home, css %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <TITLE>HomeFundr</TITLE>
+    <style type="text/css">{{css()}}</style>
+
+</head>
+<body>
+    {{ form.csrf_token}}
+        <h1 class="HomeHeader">Welcome to HomeFundr!</h1>
+
+        <h3>Mark your preferences below, and we will find the best home investment in San Francisco.</h3>
+            {{ render_home(form) }}
+	<p><a href="{{ url_for('results') }}">See your Results!</a></p>
+</body>
+</html>

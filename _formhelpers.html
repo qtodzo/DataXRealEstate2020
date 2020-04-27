@@ -1,0 +1,41 @@
+{% macro css() -%}
+    
+{% endmacro %}
+
+<!-- {% macro widget() -%}
+    <div class="mywidget">
+
+    </div>
+{% endmacro %}
+
+{% macro script() -%}
+    $( ".mywidget" ).addFunctionality(stuff)
+{% endmacro %} -->
+
+
+
+{% macro render_home(form) %}
+    <form action="/Update" method="POST">
+    <div class = "maxprice">
+        <div>What is your up front Maximum Price?
+         	{{ render_field(form.MaxPriceDropdown, onchange="this.form.submit()") }}
+        </div>
+    </div>
+    <div class = "maxprice">
+        <p>What are your preferred neighborhoods?(Ctrl+[Click] for multiple selections)</p>
+            {{ render_field(form.NeighborhoodsDropdown,onchange="this.form.submit()") }}
+    </div>
+{% endmacro %}
+
+
+
+{% macro render_field(field, index) %}
+    {{ field(**kwargs)|safe}}
+    {% if field.errors %}
+        <ul class=errors>
+            {% for error in field.errors %}
+                <li>{{ error }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+{% endmacro %}

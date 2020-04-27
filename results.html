@@ -1,0 +1,28 @@
+{% from "_formhelpers.html" import render_field, render_home, css %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <TITLE>HomeFundr</TITLE>
+    <style type="text/css">{{css()}}</style>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/results.css') }}">
+
+</head>
+<body>
+	<p class="CacheMessage">{{message}} </p>        
+
+	<h3 class="HomeHeader">Our HomeFundr Reccommended Investment is: </h3>
+	<h2 class="HomeHeader">{{outputCheck.iloc[0,-1]}} </h2>
+	<img src= {{ img }} width="1000" height="500" alt="Plot" border="0">
+	<a href={{ link }}>Craigslist Link</a>
+</body>
+
+<div class="chart-wrap vertical">
+
+
+<div class='grid'>
+	<div class='bar' style="--bar-value:200;" data-name="TEST" title="TEST HOUSE"></div>
+</div>
+</div>
+</html>
