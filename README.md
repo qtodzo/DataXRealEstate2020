@@ -28,6 +28,7 @@ To make sure that this script runs properly, ensure that the file titled "zillow
 #### Step 5: Run the script titled "ProjectFlaskUI-Final.ipynb"
 This script actually runs the User Interface allowing the user to interractively find their best real estate investing option. The script first accepts the dataframe created in step 4, and then adds to it the actual address of the listing by using the geopy module package (the script may take up to 2-3 minutes to run this portion of the script). Finally, at the bottom of the script, there is a kernal that should be running with text in red displaying *Running on http://127.0.0.1:5000/ 
 
-
+#### Step 6: Run the UI
+Note that in order for the UI to run properly it is necessary to download the folders titled "static" and "templates". From here, click on the link under app.run() listed in Step 5. This will take you to the user interface. Now you can use the input and output pages to give preferences and then see what is the best real estate option by clicking "See your Results!"
 
 
