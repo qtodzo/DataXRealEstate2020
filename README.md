@@ -22,4 +22,12 @@ Predicting Real Estate Values for Strategic and Responsible Investment. All inst
 #### Step 3: Run the script titled "QProjections.ipynb"
 This script will take the scaling factors created by the model and put them into a pandas dataframe. This dataframe is then saved into the pickle file titled "output.pkl"
 
-#### Step 4: Run the script titled "
+#### Step 4: Run the script titled "DataframeProcessing.ipynb"
+To make sure that this script runs properly, ensure that the file titled "zillow-neighborhoods.geojson" is in the current folder. This script accepts the pickle file created by "QProjections.ipynb" called "output.pkl" and then does a web scrape of the available listings on Craigslist. Then the script takes the Craigslist data and applies the model factors to the listed price using the neighborhood conversion from the GeoPandas and Shapely modules. Once all is said and done, this script outputs a dataframe of all the craigslist listings and their respective future price predictions. This will be saved in the pickle file titled "craigslist_df.quinn"
+
+#### Step 5: Run the script titled "ProjectFlaskUI-Final.ipynb"
+This script actually runs the User Interface allowing the user to interractively find their best real estate investing option. The script first accepts the dataframe created in step 4, and then adds to it the actual address of the listing by using the geopy module package (the script may take up to 2-3 minutes to run this portion of the script). Finally, at the bottom of the script, there is a kernal that should be running with text in red displaying *Running on http://127.0.0.1:5000/ 
+
+
+
+
