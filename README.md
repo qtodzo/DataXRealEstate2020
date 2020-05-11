@@ -3,9 +3,9 @@ Predicting Real Estate Values for Strategic and Responsible Investment
 
 ## Instructions on how to run the UI
 Step 1: Make sure your environment is complete with the necessary modules. Your environment must contain the following:
-#        Numpy (numerical operations)
-#        Pandas (organizing various data into readable data tables)
-#        GeoPandas (organizing and manipulating geotagged data, which when installed should come with Shapely and other geoprocessing   packages)
+###        Numpy (numerical operations)
+###        Pandas (organizing various data into readable data tables)
+###        GeoPandas (organizing and manipulating geotagged data, which when installed should come with Shapely and other geoprocessing   packages)
 #        Modules used in Web Scraping:
 #            requests 
 #            BeautifulSoup 
