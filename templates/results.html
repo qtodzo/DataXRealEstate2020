@@ -13,9 +13,22 @@
 	<p class="CacheMessage">{{message}} </p>        
 
 	<h3 class="HomeHeader">Our HomeFundr Reccommended Investment is: </h3>
-	<h2 class="HomeHeader">{{outputCheck.iloc[0,-1]}} </h2>
-	<img src= {{ img }} width="1000" height="500" alt="Plot" border="0">
+	<h2 class="HomeHeader">{{Address1}} </h2>
 	<a href={{ link }}>Craigslist Link</a>
+	<h3 class="HomeHeader">The Listed Price on this offer is: ${{current}}</h3>
+	<h3 class="HomeHeader">Your Expected Profits After 5 years are: ${{ROI5}}</h3>
+	<h3 class="HomeHeader">Your Expected Profits After 10 years are: ${{ROI10}}</h3>
+	<h3 class="HomeHeader">Your Expected Profits After 20 years are: ${{ROI20}}</h3>
+	<p></p>
+	<h2 class="HomeHeader">Comparison to Top Results For Your Search: </h2>
+	<h2 class="HomeHeader">	</h2>
+	<img src= {{ img }} width="1000" height="500" alt="Plot" border="0">
+	<p></p>
+	<a href={{ link2 }}>2nd Best Option</a>
+	<p></p>
+	<a href={{ link3 }}>3rd Best Option</a>
+	
+	
 </body>
 
 <div class="chart-wrap vertical">
