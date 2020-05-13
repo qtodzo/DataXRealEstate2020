@@ -17,6 +17,8 @@ Predicting Real Estate Values for Strategic and Responsible Investment. All inst
 - wtforms (for helping build the user input)
 - matplotlib (for building the plots used)
 
+Please also unzip the large dataset "Neighborhood_Zhvi_AllHomes.csv.zip" so the file lies in the repository with only the .csv tag.
+
 #### Step 2: Clone the repository on your PC, and open the files using Jupyter Notebook
 
 #### Step 3: Run the script titled "QProjections.ipynb"
