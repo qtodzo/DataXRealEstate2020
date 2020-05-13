@@ -1,5 +1,5 @@
 # DataXRealEstate2020
-Predicting Real Estate Values for Strategic and Responsible Investment. All instructions on how to use this prediction model are found in the README. The actual algorithm is written in the script titled "Predicting.ipynb" and the model output is found in the script titled "Output.ipynb"
+Predicting Real Estate Values for Strategic and Responsible Investment. All instructions on how to use this prediction model are found in the README. The actual algorithm is written in the script titled "Predicting.ipynb" and the model output is found in the script titled "Model Output.ipynb"
 ## Instructions on how to run the UI
 #### Step 1: Make sure your environment is complete with the necessary modules. Your environment must contain the following:
 - Numpy (numerical operations)
